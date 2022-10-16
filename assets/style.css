@@ -1,0 +1,70 @@
+:root {
+    --main-bg-color: rgba(255, 255, 255, 1);
+    --main-text-color: #ffffff;
+    --main-text-color: rgba(14, 19, 72, 0.6);
+    --light-text-color: #ffffff;
+    --heading-color: Dodgerblue;
+    --button-color: rgb(8, 60, 251);
+    --results-star-enabled: rgb(255, 225, 2);
+    --option-hover: rgb(231, 228, 228);
+    --box-shadow: 0px 10px 13px -7px #000000,
+        5px 5px 15px 5px rgba(0, 0, 0, 0);
+    --box-height: 500px;
+    --box-width: 500px;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    font-family: 'Roboto Mono';
+}
+
+body {
+    background-image: url("/assets/background.jpeg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    border-radius: 25px;
+    background-color: var(--button-color);
+    color: #fff;
+    font-size: 1.2em;
+    text-decoration: none;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+}
+
+.btn:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--main-bg-color);
+    border-radius: 25px;
+    min-width: 300px;
+}
